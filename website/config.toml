@@ -13,7 +13,7 @@ enableMissingTranslationPlaceholders = true
 [[menu.main]]
   name = "Documentation"
   weight = 10
-  url = "/docs/latest/home"
+  url = "/docs/latest"
 
 # Language configuration
 [languages]
@@ -42,7 +42,7 @@ enableMissingTranslationPlaceholders = true
       unsafe = true
   [markup.highlight]
       # See: https://xyproto.github.io/splash/docs/all.html
-      style = "dracula"
+      style = "friendly"
 
 [params]
 copyright = "Kasper Schultz Davidsen"
@@ -54,11 +54,11 @@ fullversion = "v0.1.0"
 version = "latest"
 githubbranch = "v0.1.0"
 docsbranch = "main"
-url = "/docs/latest/home"
+url = "/docs/latest"
 
 [[params.versions]]
 fullversion = "v0.0.0"
 version = "v0.0"
 githubbranch = "v0.0.0"
 docsbranch = "release-v0.0.0"
-url = "/docs/v0.0/home"
+url = "/docs/v0.0"
