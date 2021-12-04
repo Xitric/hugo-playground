@@ -9,6 +9,12 @@ defaultContentLanguage = 'en'
 defaultContentLanguageInSubdir = false
 enableMissingTranslationPlaceholders = true
 
+[menu]
+[[menu.main]]
+  name = "Documentation"
+  weight = 10
+  url = "/docs/latest/home"
+
 # Language configuration
 [languages]
   [languages.en]
@@ -42,3 +48,17 @@ enableMissingTranslationPlaceholders = true
 copyright = "Kasper Schultz Davidsen"
 version_menu = "Releases"
 version = "0.1"
+
+[[params.versions]]
+fullversion = "v0.1.0"
+version = "latest"
+githubbranch = "v0.1.0"
+docsbranch = "main"
+url = "/docs/latest/home"
+
+[[params.versions]]
+fullversion = "v0.0.0"
+version = "v0.0"
+githubbranch = "v0.0.0"
+docsbranch = "release-v0.0.0"
+url = "/docs/v0.0/home"
