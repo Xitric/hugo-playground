@@ -2,3 +2,43 @@ baseURL = 'https://docs.bizzkit.com/'
 title = 'Bizzkit Documentation'
 
 theme = ['docsy']
+
+# Language settings
+contentDir = 'content/en'
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = false
+enableMissingTranslationPlaceholders = true
+
+# Language configuration
+[languages]
+  [languages.en]
+    title = 'Hugo Playground'
+    description = 'Bizzkit Documentation'
+    languageName ='English'
+    weight = 1
+  [languages.da]
+    title = "Hugo Legeplads"
+    description = "Bizzkit Dokumentation"
+    languageName ="Dansk"
+    contentDir = "content/da"
+    weight = 2
+    [languages.da.params]
+      # See: https://gohugohq.com/howto/hugo-dateformat/#conclusion-table
+      time_format_default = "02.01.2006"
+      time_format_blog = "02.01.2006"
+      language_alternatives = ["en"]
+
+# Markdown interpreter settings
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      # Enables use of inline HTML and JavaScript - we control the content, so we can trust it
+      unsafe = true
+  [markup.highlight]
+      # See: https://xyproto.github.io/splash/docs/all.html
+      style = "dracula"
+
+[params]
+copyright = "Kasper Schultz Davidsen"
+version_menu = "Releases"
+version = "0.1"
