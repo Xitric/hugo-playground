@@ -1,7 +1,7 @@
 ---
 title: Structure
 main_menu: true
-weight: 50
+weight: 10
 ---
 
 This section describes the design of the Hugo documentation site.

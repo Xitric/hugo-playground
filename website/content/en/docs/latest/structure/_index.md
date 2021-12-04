@@ -1,7 +1,9 @@
 ---
 title: Structure
 main_menu: true
-weight: 50
+weight: 40
+description: >
+  A walkthrough of the design of the Bizzkit Platform documentation website powered by Hugo.
 ---
 
 This section describes the design of the Hugo documentation site.

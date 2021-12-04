@@ -3,4 +3,5 @@ title: "Latest"
 date: 2021-11-26T08:46:47Z
 ---
 
-This is a placeholder page that shows you how to use this template site.
+Welcome to the Bizzkit Platform documentation.
+Below you will find a quick overview of the sections on this documentation site.

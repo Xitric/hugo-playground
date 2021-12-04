@@ -1,7 +1,9 @@
 ---
 title: Best practices
 main_menu: true
-weight: 40
+weight: 30
+description: >
+  Description of developer best practices to follow when writing documentation on Bizzkit platform products.
 ---
 
 This section iterates the developer best practices to follow when writing documentation on Bizzkit platform products.
