@@ -1,0 +1,13 @@
+{{- $currentVersion := index (split .File.Dir "/") 1 }}
+{{- $latestVersion := "latest" }}
+{{- $latestUrl := replace .RelPermalink $currentVersion $latestVersion }}
+
+{{- if ne $currentVersion $latestVersion }}
+{{ $color := "primary" }}
+<div class="pageinfo pageinfo-{{ $color }}">
+  <p>
+    Version {{ $currentVersion | markdownify }} of the documentation is no longer actively maintained. The site that you are currently viewing is an archived snapshot.
+    For up-to-date documentation, see the <a href="{{ $latestUrl | safeURL }}" target="_blank">latest version</a>.
+  </p>
+</div>
+{{ end }}
