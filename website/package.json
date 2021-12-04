@@ -1,0 +1,17 @@
+{
+  "name": "bizzkit-docs",
+  "version": "0.1.0",
+  "description": "Experimentation with setting up a static documentation site using Hugo",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xitric/hugo-playground.git"
+  },
+  "author": "Kasper Schultz Davidsen",
+  "license": "ISC",
+  "homepage": "https://github.com/Xitric/hugo-playground#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.3",
+    "postcss-cli": "^9.0.2"
+  }
+}
