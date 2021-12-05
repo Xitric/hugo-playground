@@ -3,6 +3,9 @@ title = 'Bizzkit Documentation'
 
 theme = ['docsy']
 
+enableRobotsTXT = true
+enableGitInfo = true
+
 # Language settings
 contentDir = 'content/en'
 defaultContentLanguage = 'en'
@@ -14,6 +17,16 @@ enableMissingTranslationPlaceholders = true
   name = "Documentation"
   weight = 10
   url = "/docs/latest"
+
+[[menu.main]]
+    name = "GitHub"
+    weight = 100
+    url = "https://github.com/Xitric/hugo-playground/"
+    pre = "<i class='fab fa-github'></i>"
+
+[services]
+[services.googleAnalytics]
+id = "UA-00000000-0"
 
 # Language configuration
 [languages]
@@ -47,7 +60,51 @@ enableMissingTranslationPlaceholders = true
 [params]
 copyright = "Kasper Schultz Davidsen"
 version_menu = "Releases"
-version = "0.1"
+
+# TODO: May need to replace with something better, that takes the selected version into account
+# Azure Static Web Apps and Cognitive Services may provide something of value
+offlineSearch = true
+offlineSearchSummaryLength = 70
+offlineSearchMaxResults = 10
+
+[params.ui]
+sidebar_search_disable = false
+
+[params.ui.feedback]
+# TODO: Can be extended to provide options for letting users enter their feedback anonymously
+enable = true
+
+[params.ui.readingtime]
+enable = true
+
+[params.links]
+[[params.links.user]]
+  name = "Hugo documentation"
+  url = "https://gohugo.io/documentation/"
+  desc = "Hugo documentation"
+[[params.links.user]]
+  name = "Docsy documentation"
+  url = "https://www.docsy.dev/docs/"
+  desc = "Docsy documentation"
+[[params.links.developer]]
+  name = "Kubernetes reference"
+  url = "https://github.com/kubernetes/website"
+  desc = "Reference Hugo website for Kubernetes"
+[[params.links.developer]]
+  name = "Thanos reference"
+  url = "https://github.com/thanos-io/thanos/tree/main/website"
+  desc = "Reference Hugo website for Thanos"
+[[params.links.developer]]
+	name = "GitHub"
+	url = "https://github.com/Xitric/hugo-playground/"
+	icon = "fab fa-github"
+  desc = "Development takes place here!"
+
+# Automatically convert embedded plantuml into UML diagrams!
+[params.plantuml]
+enable = true
+theme = "superhero"
+svg_image_url = "https://www.plantuml.com/plantuml/svg/"
 
 [[params.versions]]
 fullversion = "v0.1.0"
